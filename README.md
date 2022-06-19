@@ -19,10 +19,10 @@ Or install it yourself as:
 
 ## Configuring
 
-Create configuration file config/initializers/slack_mailer.rb
+Create configuration file config/initializers/discord_mailer.rb
 
 ```ruby
-Slack::Mailer::Configuration.configure do |config|
+Discord::Mailer::Configuration.configure do |config|
   config.templates_path = "#{Rails.root}/app/views/discord_templates/"
   config.templates_type = 'text'
   config.erb_in_templates = true
